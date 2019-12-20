@@ -1,3 +1,4 @@
+---
 app-id: com.hamrick.VueScan
 runtime: org.gnome.Platform
 runtime-version: "3.34"
@@ -53,10 +54,10 @@ modules:
       - type: script
         dest-filename: apply_extra
         commands:
-          - tar xf vuescan.tgz
+          - tar xof vuescan.tgz
           - rm vuescan.tgz
           - mv VueScan/* .
-          - rm vuescan.svg # Unfortunately the SVG is just a JPEG embedded in SVG container
+          - rm vuescan.svg # This is just a JPEG embedded in an SVG container, prefer PNGs
           - rmdir VueScan
       - type: script
         dest-filename: vuescan
@@ -74,3 +75,4 @@ modules:
         path: icons/icon48x48.png
       - type: file
         path: icons/icon128x128.png
+...
