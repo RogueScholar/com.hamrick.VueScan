@@ -1,6 +1,6 @@
 app-id: com.hamrick.VueScan
 runtime: org.gnome.Platform
-runtime-version: '3.34'
+runtime-version: "3.34"
 sdk: org.gnome.Sdk
 command: vuescan
 tags:
@@ -56,7 +56,7 @@ modules:
           - tar xof vuescan.tgz
           - rm vuescan.tgz
           - mv VueScan/* .
-          - rm vuescan.svg  # This is just a JPEG embedded in an SVG container, prefer PNGs
+          - rm vuescan.svg # This is just a JPEG embedded in an SVG container, prefer PNGs
           - rmdir VueScan
       - type: script
         dest-filename: vuescan
